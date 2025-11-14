@@ -1,0 +1,44 @@
+{
+  "target_directory": "./batch_output",
+  "warehouse_size": "XS",
+  "file_configs": [
+    {
+      "source_file": "data/table1_data.csv",
+      "batch_size_mb": 250,
+      "table_name": "table1",
+      "description": "First table with 250MB batches"
+    },
+    {
+      "source_file": "data/table2_data.csv",
+      "batch_size_mb": 100,
+      "table_name": "table2",
+      "description": "Second table with 100MB batches"
+    },
+    {
+      "source_file": "data/table3_data.csv",
+      "batch_size_mb": 150,
+      "table_name": "table3",
+      "description": "Third table with 150MB batches"
+    },
+    {
+      "source_file": "data/table4_data.csv",
+      "batch_size_mb": 250,
+      "table_name": "table4",
+      "description": "Fourth table with 250MB batches"
+    },
+    {
+      "source_file": "data/table5_data.csv",
+      "batch_size_mb": 100,
+      "table_name": "table5",
+      "description": "Fifth table with 100MB batches"
+    }
+  ],
+  "snowflake_connection": {
+    "account": "your_account",
+    "user": "your_user",
+    "password": "your_password",
+    "database": "BATCH_LOAD_DB",
+    "schema": "PUBLIC",
+    "warehouse": "BATCH_LOAD_WH"
+  }
+}
